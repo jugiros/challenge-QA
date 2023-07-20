@@ -4,10 +4,7 @@ function fn() {
 
     return {
         api: {
-            baseUrl: 'https://www.demoblaze.com/'
-        },
-        user: {
-            name: 'karate'
+            baseUrl: 'https://api.demoblaze.com'
         }
     };
 }

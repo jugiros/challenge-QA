@@ -12,8 +12,6 @@ X
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 f
 6src/main/java/com/serenity/bdd/utils/UrlPaginaWeb.java,3\5\351d8bdde723eacfb1daf7309a99afd32525afd6
-l
-<src/test/java/com/serenity/bdd/runners/AddProductRunner.java,4\5\45fe11208d35f08f03e419155543ba49d6e73db4
 C
 serenity.properties,2\5\25f1bbdc8dba7ca4a4b90251f1ef69621b24a28c
 o
@@ -28,7 +26,5 @@ i
 9src/main/java/com/serenity/bdd/models/FormularioPago.java,4\a\4a4d10f178fd1f96cd270b093bd063e58c49cab5
 j
 :src/main/java/com/serenity/bdd/tasks/AbreCarroCompras.java,d\7\d77021dbc3c94e2e240bebd04143ed4866c49153
-y
-Isrc/test/java/com/serenity/bdd/stepdefinitions/AddProductDefinitions.java,b\5\b563f14bbb5c8f0b7c162799112ead2e66acc51b
 n
 >src/main/java/com/serenity/bdd/userinterfaces/PaginaCarro.java,6\4\64944b492f9670f0231ead99e3b6cf680f0f8469

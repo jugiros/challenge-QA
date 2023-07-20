@@ -14,8 +14,6 @@ f
 6src/main/java/com/serenity/bdd/utils/UrlPaginaWeb.java,3\5\351d8bdde723eacfb1daf7309a99afd32525afd6
 C
 serenity.properties,2\5\25f1bbdc8dba7ca4a4b90251f1ef69621b24a28c
-l
-<src/test/java/com/serenity/bdd/runners/AddProductRunner.java,4\5\45fe11208d35f08f03e419155543ba49d6e73db4
 o
 ?src/main/java/com/serenity/bdd/userinterfaces/PaginaInicio.java,8\9\8997a1fca6ff3e9497e39b3bf5a921e8169b9fc9
 q
@@ -28,7 +26,5 @@ t
 Dsrc/test/java/com/serenity/bdd/stepdefinitions/ParameterTypeDef.java,3\f\3f82337f1aaaeca8427ec23bc17494642a3bd714
 j
 :src/main/java/com/serenity/bdd/tasks/AbreCarroCompras.java,d\7\d77021dbc3c94e2e240bebd04143ed4866c49153
-y
-Isrc/test/java/com/serenity/bdd/stepdefinitions/AddProductDefinitions.java,b\5\b563f14bbb5c8f0b7c162799112ead2e66acc51b
 n
 >src/main/java/com/serenity/bdd/userinterfaces/PaginaCarro.java,6\4\64944b492f9670f0231ead99e3b6cf680f0f8469
