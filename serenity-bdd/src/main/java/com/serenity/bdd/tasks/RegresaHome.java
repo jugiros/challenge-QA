@@ -4,22 +4,21 @@ import net.serenitybdd.core.Serenity;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
 
+import static com.serenity.bdd.userinterfaces.PaginaInicio.LINK_HOME;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class AceptaAlerta implements Task {
+public class RegresaHome implements Task {
 
-    public static Performable aceptaAlerta() {
-        return instrumented(AbreProducto.class);
+    public static Performable regresaHome() {
+        return instrumented(RegresaHome.class);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        try {
-            Serenity.getDriver().switchTo().alert().accept();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+
+        actor.attemptsTo(Click.on(LINK_HOME).afterWaitingUntilEnabled());
     }
 
 }
