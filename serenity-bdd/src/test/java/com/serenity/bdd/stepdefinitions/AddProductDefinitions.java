@@ -1,5 +1,7 @@
 package com.serenity.bdd.stepdefinitions;
 
+import com.serenity.bdd.interactions.LlenarFormularioCompra;
+import com.serenity.bdd.models.FormularioPago;
 import com.serenity.bdd.tasks.*;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
@@ -39,5 +41,16 @@ public class AddProductDefinitions {
         theActorInTheSpotlight().attemptsTo(
                 AbreCarroCompras.abreCarro()
         );
+        theActorInTheSpotlight().attemptsTo(
+                AbreFormularioPago.abreFormularioPago()
+        );
+        theActorInTheSpotlight().attemptsTo(
+                LlenarFormulario.paraFormulario(FormularioPago.builder()
+                        .name("Juan")
+                        .country("Ecuador")
+                        .city("Quito")
+                        .creditCard("123")
+                        .month("07")
+                        .year("2023").build()));
     }
 }

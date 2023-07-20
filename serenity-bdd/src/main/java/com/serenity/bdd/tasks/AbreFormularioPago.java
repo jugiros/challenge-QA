@@ -5,18 +5,16 @@ import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 
+import static com.serenity.bdd.userinterfaces.PaginaCarro.BUTTON_OPEN_FORM;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static com.serenity.bdd.userinterfaces.PaginaProducto.BUTTON_ADD_PRODUCT;
 
-public class AgregaProducto implements Task {
-
-    public static Performable agregaProducto() {
-        return instrumented(AgregaProducto.class);
+public class AbreFormularioPago implements Task {
+    public static Performable abreFormularioPago() {
+        return instrumented(AbreFormularioPago.class);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(BUTTON_ADD_PRODUCT).afterWaitingUntilEnabled());
+        actor.attemptsTo(Click.on(BUTTON_OPEN_FORM).afterWaitingUntilEnabled());
     }
-
 }
