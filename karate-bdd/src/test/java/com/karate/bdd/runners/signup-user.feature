@@ -1,4 +1,4 @@
-Feature: Login Usuario
+Feature: Signup Usuario
 
   Background:
     * url api.baseUrl
@@ -10,19 +10,20 @@ Feature: Login Usuario
     """
     * def errorResponse = read("error-message-post.json")
 
-  Scenario Outline: Login credenciales correctas
-    Given path "login"
+  #    Se debe modificar el usuario para poder crear un usuario nuevo
+  Scenario Outline: Signup usuario nuevo
+    Given path "signup"
     And request requestPayload
     And header Content-Type = "application/json"
     When method post
     Then status 200
-    And match $ == "#string"
+    And match response == ""
     Examples:
       | username | password |
-      | juan     | anVhbg== |
+      | GHJKE    | anVhbg== |
 
-  Scenario Outline: Login credenciales incorrectas
-    Given path "login"
+  Scenario Outline: Signup usuario existente
+    Given path "signup"
     And request requestPayload
     And header Content-Type = "application/json"
     When method post
@@ -30,4 +31,4 @@ Feature: Login Usuario
     And match $ == errorResponse
     Examples:
       | username | password |
-      | Juan     | juan     |
+      | juan        | anVhbg==     |

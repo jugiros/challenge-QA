@@ -28,3 +28,9 @@ j
 :src/main/java/com/serenity/bdd/tasks/AbreCarroCompras.java,d\7\d77021dbc3c94e2e240bebd04143ed4866c49153
 n
 >src/main/java/com/serenity/bdd/userinterfaces/PaginaCarro.java,6\4\64944b492f9670f0231ead99e3b6cf680f0f8469
+f
+6src/main/java/com/serenity/bdd/tasks/AceptaAlerta.java,e\9\e9f9624df01a3d4e6c5c6874f13092bd5ce3a6c7
+j
+:src/main/java/com/serenity/bdd/tasks/LlenarFormulario.java,e\c\ecca15b4652b4da45009d20d5d8fc908fbf09694
+f
+6src/main/java/com/serenity/bdd/tasks/AbreProducto.java,d\2\d20dcca6257df4818064e29bf814b9a077d62473
