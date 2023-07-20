@@ -8,5 +8,5 @@ Característica: Agregar un producto
   @AgregarProductoExitoso
   Escenario: Generar pago existoso
     Dado Juan navega a la ventana para agregar el 1er productos
-    Cuando agrega el segundo producto
-    Entonces abre el carrito y finaliza la compra
+    Cuando regresa al home abre sel segundo producto y lo agrega
+    Entonces abre el carrito finaliza la compra y visualiza el mensaje de realizado

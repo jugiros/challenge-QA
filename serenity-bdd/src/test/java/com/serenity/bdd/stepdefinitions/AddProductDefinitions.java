@@ -1,6 +1,5 @@
 package com.serenity.bdd.stepdefinitions;
 
-import com.serenity.bdd.interactions.LlenarFormularioCompra;
 import com.serenity.bdd.models.FormularioPago;
 import com.serenity.bdd.tasks.*;
 import io.cucumber.java.es.Cuando;
@@ -24,7 +23,7 @@ public class AddProductDefinitions {
                 AgregaProducto.agregaProducto()
         );
     }
-    @Cuando("agrega el segundo producto")
+    @Cuando("regresa al home abre sel segundo producto y lo agrega")
     public void usuarioAgregaNuevoProducto() {
         theActorInTheSpotlight().attemptsTo(
             RegresaHome.regresaHome()
@@ -33,7 +32,7 @@ public class AddProductDefinitions {
                 AbreNuevoProducto.abreNuevoProducto()
         );
     }
-    @Entonces("abre el carrito y finaliza la compra")
+    @Entonces("abre el carrito finaliza la compra y visualiza el mensaje de realizado")
     public void finalizaCompra() {
         theActorInTheSpotlight().attemptsTo(
                 AgregaNuevoProducto.agregaProducto()

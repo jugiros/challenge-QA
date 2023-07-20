@@ -16,18 +16,6 @@ public class AgregaNuevoProducto implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-//        try {
-//            actor.attemptsTo(Click.on(BUTTON_ADD_PRODUCT).afterWaitingUntilEnabled());
-//        } catch (UnhandledAlertException f) {
-//            try {
-//                Alert alert = Serenity.getDriver().switchTo().alert();
-//                String alertText = alert.getText();
-//                System.out.println("Alert data: " + alertText);
-//                alert.accept();
-//            } catch (NoAlertPresentException e) {
-//                e.printStackTrace();
-//            }
-//        }
         actor.attemptsTo(Click.on(BUTTON_ADD_PRODUCT).afterWaitingUntilEnabled());
     }
 
